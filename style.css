@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 50px 235px 10px 235px;
+} 
+
+img{
+    width: 970px;
+}
+
+#Mont{
+    font-family: "Montserrat",serif;
+}
+
+#Play{
+    font-family: 'Playfair Display', serif;
+}
+
+/* HEADER */
+
+header h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+header p{
+    padding: 40px 0;
+    text-align: justify;
+    align-items: left;
+    width: 570px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    font-style: italic;
+}
+
+/* HEADER END */
+
+
+
+
+
+/* MAIN */
+
+main{
+    display: grid;
+    grid-template-columns: 0.8fr  0.2fr 0.4fr 0.5fr;
+    padding: 40px 0;
+}
+
+.head2{
+    padding-top: 15px;
+    
+}
+
+li{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.list p{
+    padding: 30px 0;
+}
+
+.list ul li{
+    padding: 10px 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items:flex-start;
+}
+
+#click{
+    display: block;
+    
+}
+
+section ol li{
+    padding-top: 20px;
+}
+
+section ol li:nth-child(1){
+    padding-top: 30px;
+}
+
+section ol{
+
+        align-items:center;
+        justify-content: center;
+        font-size:16px;
+        
+}
+
+aside{
+    grid-column: 3;
+    margin-bottom: auto;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+aside div{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.text{
+    display: block;
+}
+
+.fa-solid.fa-utensils{
+    color: #F2994A;
+
+}
+
+.first-text{
+    color: #F2994A;
+}
+
+aside p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+h5{
+    font-size: 10px;
+    font-weight: 700;
+    color: #BDBDBD;
+}
+
+
+
+/* MAIN END */
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+/* FOOTER END */
+
+
+
+@media(max-width:1000px){
+
+    body{
+        padding: 50px 20px;
+    }
+
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 1fr;
+        padding: 0;
+    }
+
+    aside{
+        grid-column: 1;
+        padding: 20px 0;
+        order: 1;
+        margin-bottom: 30px;
+        border: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        box-shadow: none;
+        grid-gap: 40px;
+
+    }
+
+    aside div{
+        padding: 0;
+    }
+
+    aside :nth-child(2){
+        grid-column: 1;
+    }
+
+    .text{
+        padding-left: 10px;
+    }
+
+    section{
+        order:2
+    }
+
+    img{
+        max-width: 600px;
+
+    }
+
+}
